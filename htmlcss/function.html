@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <style>
+        .box{
+            width: calc(50px + 20Px);
+            height: 100px;
+            background: rgb(10, 130, 185);
+        }
+        .box::after{
+            content: attr(data);
+        }
+        a::after{
+            content: "(" attr(href)")";
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data="Đây là box"></div>
+    <a href="https://www.facebook.com/">vào fb</a>
+        <!-- calc là tính toán -->
+        <!-- rgb màu sắc -->
+        <!-- rgba màu sắc có hiệu ứng trong suốt theo alpha từ 0(trong suốt hoàn toàn) -> 1(bỏ trong suốt) -->
+</body>
+</html>

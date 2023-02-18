@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // JSX tạo ra biến gắn vào JSX, hỗ trợ code js vào giữa JSX dùng {viết code js ở đây}
+        // sử dụng style trong thẻ khi dùng JSX thì phải ghi kiểu object {{object}}
+        // phải có babel mới dùng đc JSX để thông dịch sang js
+        const courses = [
+            {
+                name: 'html'
+            },
+            {
+                name: 'css'
+            },
+            {
+                name: 'js'
+            }
+        ]
+
+        const newCourse = courses.map(function(course){
+           return <li key={index} >{course.name}</li>// thêm key vào để ko gặp lỗi, mỗi key là độc nhất
+        })
+        
+        const ul = <ul>
+            {newCourse}
+        </ul>
+        ReactDOM.render(ul, document.getElementById('root'))
+    </script>
+</body>
+</html>

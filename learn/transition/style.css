@@ -1,0 +1,18 @@
+#box{
+    background-color: red;
+    width: 100px;
+    height: 200px;
+    transition: all 2s ease-in-out 0.5s;
+}
+/* transition: 1.(thuộc tính chuyển động""margin left, color, all,...") 2.(thời gian chuyển động) 3.(delay) 4(Kiểu chuyển động"ease in out") */
+/* ease Xác định một hiệu ứng của quá trình chuyển đổi với một sự khởi đầu chậm, sau đó nhanh chóng, sau đó kết thúc chậm
+   ease-in Xác định một hiệu ứng của quá trình chuyển đổi với một khởi đầu chậm chạp.
+   ease-out Xác định một hiệu ứng của quá trình chuyển đổi với một kết thúc chậm.
+   ease-in-out Xác định một hiệu ứng của quá trình chuyển đổi với một khởi đầu và kết thúc chậm.
+   linear Xác định một hiệu ứng của quá trình chuyển đổi với cùng một tốc độ từ đầu đến cuối.
+   cubic-bezier(n,n,n,n) Xác định giá trị cho hiệu ứng của quá trình chuyển đổi theo từng giai đoạn, giá trị xác định chỉ có thể từ 0 tới 1. 
+*/
+#box:hover{
+    background-color: blue;
+    margin-left: 100px;
+}

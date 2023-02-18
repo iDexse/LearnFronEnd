@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit</title>
+    <!-- đơn vị -->
+
+    <Style>
+        html{
+            font-size: 30px;
+        }
+        .box{
+            width: 50%;
+            height: 100px;
+            background-color: black;
+        }
+        .first{
+           font-size: 2rem; 
+        }
+    </Style>
+</head>
+<body>
+    <div class="box"></div>
+    <ol>
+        <!-- đơn vị tuyệt đối -->
+        <li class="first">Absolute Units</li>
+        <ul>
+            <!-- kích thước cố định, không thay đổi khi trang web thay đổi kích thước -->
+            <li>px</li>
+        </ul>
+        <!-- đơn vị tương đối -->
+        <li>Relative Units</li>
+        <ul>
+            <!-- kích thước không cố định, thay đổi tùy theo kích thước trang web -->
+            <!-- <li>%</li>phụ thuộc thẻ chứa nó, như boby là cả trang web nên nếu như là 50% thì sẽ là nửa trang web -->
+            <!-- <li>rem</li> phụ thuộc vào html, ví dụ: font size = 20px trong html, thì 1rem sẽ = 20px -->
+            <!-- <li>em</li> phụ thuộc vào thẻ có thuộc tính gần nhất chứa nó -->
+            <!-- vw viewport width, vh viewport height -->
+            <!-- <li>vw</li> phụ thuộc theo kích thước chiều ngang trang web, ví dụ 100vw thì sẽ bằng chiều ngang trang web -->
+            <!-- <li>vh</li> phụ thuộc theo kích thước chiều dọc trang web, ví dụ 100vh thì sẽ bằng chiều dọc trang web -->
+        </ul>
+    </ol>
+</body>
+</html>
