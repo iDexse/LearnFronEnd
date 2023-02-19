@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 20px;
+}
+.item{
+    background-color: gold;
+    border: 1px solid grey;
+    min-height: 50px;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-auto-rows: 200px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content content"
+    "sidebar comment comment"
+    "footer footer footer";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+/* grid-template-columns bao nhiêu cột, kích thước chiều ngang fr(fraction chiếm theo tỷ lệ)
+   grid-template-rows bao nhiêu hàng, kích thước chiều dọc 
+   grid-auto-rows kích thước chiều cao mà không ảnh hướng đến bao nhiêu hàng
+   column-gap tạo khoảng cách giữa các grid*/  
+
+.item-1{
+    grid-area: header;
+}
+.item-2{
+    grid-area: sidebar;
+}
+.item-3{
+    grid-area: content;
+}
+.item-5{
+    /* grid-column: 2 / 4;
+    grid-row: 2 / 4; */
+    grid-area: footer;
+}
+/* grid-column-start bắt từ grid-line theo cột số nào đó  
+   grid-row-start: bắt đầu từ grid-line theo hàng số nào đó
+   grid-column: (grid-line đầu) / (grid-line cuối) (grid-line: 2 / 4) */
+.item-4{
+    /* grid-row: 2 / 5; */
+    grid-area: comment;
+}

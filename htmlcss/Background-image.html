@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background-image</title>
+    <style>
+        html{
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            /* background-size: contain là sẽ lấy kích thước cạnh dài nhất mà không làm ảnh bị cắt mất hay 
+            che mất 1 phần ảnh */
+            /* background-size: cover là sẽ lấy kích thước cạnh dài nhất dù ảnh có bị che mất 1 phần hay bị cắt đi */
+            background-size: 100px;
+            background-image: url(https://media.istockphoto.com/photos/black-and-white-doggy-tile-pattern-repeat-background-picture-id490428980)
+            /* background-origin: padding-box là đổ ảnh từ padding vào, boder-box là đổ ảnh từ boder vào,
+            content-box là đổ ảnh từ lớp content vào */
+            /* background-position là chỉnh vị trí hình ảnh */
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+:root{
+    --primary-color: #ed9f20;
+    --text-color: #79590e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}   
+body {
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: #000;
+    font-weight: bold;
+}
+main {
+    margin-top: 1%;
+    width: 75%;
+    border-top: 1px solid #79590e;
+}
+header {
+    margin: 10px 10px 20px 10px;
+    width: 100%;
+}
+h3 {
+    color: var(--text-color);
+    text-transform: uppercase; 
+}
+h4 {
+    text-transform: uppercase;
+}
+header .header{
+    display: flex;
+}
+.header .image{
+    margin-right: 1%;
+}
+.header img{
+    width: 100px;
+}
+
+.header .header-info h4{
+    margin: 5px 0;
+}
+.header .header-info h1{
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container .container-1{
+    margin-left: 20px;
+    width: 400px;
+}
+.container-1 .study, .container-2 .info {
+    margin-bottom: 20px;
+}
+.container .container-2{
+    margin-right: 20px;
+    width: 400px;
+}
+
+.box {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom right,#ec432d, #fcb000)
+}

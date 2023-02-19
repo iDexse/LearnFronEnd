@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 200px;
+            background-color: rgb(190, 148, 10);
+            /* position: relative; */
+            display: flex;
+        }
+        h1{
+            margin: auto;
+            position: relative;
+            /* margin: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-60%) translateX(-60%);
+            left: 50%; */
+        }
+
+        h1::after{
+            position: absolute;
+            left: -5px;
+            content: "";
+            border-right: 3px solid #000;
+            height: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>center me</h1>
+    </div>
+</body>
+</html>
